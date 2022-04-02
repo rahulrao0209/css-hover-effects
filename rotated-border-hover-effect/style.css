@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .box {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  /* Create borders of box using before and after */
+  /* Using before */
+  /* Animate the borders */
+  /* Using after */
+  /* Animate the borders */
+  /* Create rotated borders using the span element */
+  /* Animate the rotated element */
+  /* Animate the borders */
+  /* Using after */
+  /* Animate the borders */
+}
+@media screen and (min-width: 390px) {
+  body .box {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  body .box {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+body .box h1 {
+  color: #272727;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+body .box h1 span {
+  color: #f19f52;
+  font-size: 3rem;
+}
+body .box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #f19f52;
+  border-bottom: 4px solid #f19f52;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+body .box:hover::before {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+body .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #f19f52;
+  border-right: 4px solid #f19f52;
+  transform: scaleY(0);
+  transition: 0.5s;
+}
+body .box:hover::after {
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+body .box .rotated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+body .box .rotated::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #f19f52;
+  border-bottom: 4px solid #f19f52;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+body .box:hover .rotated::before {
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+body .box .rotated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #f19f52;
+  border-right: 4px solid #f19f52;
+  transform: scaleY(0);
+  transition: 0.5s;
+}
+body .box:hover .rotated::after {
+  transform: scaleY(1);
+  transition-delay: 1.5s;
+}
+
+/*# sourceMappingURL=style.css.map */
