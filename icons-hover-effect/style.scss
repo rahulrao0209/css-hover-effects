@@ -16,12 +16,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FAF9F6;
-    
+    background-color: #403A3E;
+
     ul {
         list-style-type: none;
         display: flex;
-        color: #4b6cb7;
+        color: #eea849;
         flex-flow: column nowrap;
 
         @media screen and (min-width: 630px) {
@@ -37,7 +37,7 @@ body {
             width: 12rem;
             height: 12rem;
             margin: 2rem 0;
-            border: 1px solid #4b6cb7;
+            border: 1px solid #eea849;
             border-radius: 50%;
             transition: all 0.5s;
 
@@ -52,7 +52,7 @@ body {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: #4b6cb7;
+                background-color: #eea849;
                 border-radius: 50%;
                 z-index: -1;
                 transition: all 0.5s;
@@ -68,8 +68,7 @@ body {
                 color: #fff;
                 transform: scale(1.2);
             }
-
-       
+      
         }
     }
 }
