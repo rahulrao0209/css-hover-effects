@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 30rem;
+    min-height: 12rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background: #108dc7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ef8e38,
+      #108dc7
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ef8e38,
+      #108dc7
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: rgb(246, 242, 242);
+    border-radius: 1.6rem;
+    text-align: center;
+    clip-path: circle(5% at 90% 16%);
+    transition: 1s;
+
+    @media screen and (min-width: 345px) {
+      width: 40rem;
+      font-size: 1.6rem;
+    }
+
+    & > h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+
+      @media screen and (min-width: 345px) {
+        font-size: 2rem;
+      }
+    }
+
+    &:hover {
+      clip-path: circle(125.1% at 49% 51%);
+    }
+  }
+}
